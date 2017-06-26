@@ -1,0 +1,4 @@
+[submodule "maps"]
+	path = maps
+	url = https://github.com/ishivvers/GalacticMaps.git
+	branch = master
