@@ -14,8 +14,10 @@ jobs:
       - uses: actions/setup-node@v1
 
       - name: Checkout repository and submodules
-        uses: actions/checkout@v3
-        run: git submodule update --init --recursive --remote
+        run: |
+          git config --global user.email "bot@gh.com"
+          git config --global user.name "GitBot"
+          git submodule update --init --recursive --remote
 
       - name: Push results
         run: |
