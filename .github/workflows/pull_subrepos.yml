@@ -20,6 +20,8 @@ jobs:
 
       - name: Push results
         run: |
+          git config --global user.email "bot@gh.com"
+          git config --global user.name "GitBot"
           git add -u
           git commit -am "Maps updated"
           git push
